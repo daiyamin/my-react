@@ -4,6 +4,7 @@ import CarouselVertical from '../../components/carousel-vertical/carousel-vertic
 // import { Tabs } from 'antd';
 // const { TabPane } = Tabs;
 // import 'antd/dist/antd.css';
+import './index.css';
 
 const rootElement = document.getElementById('root');
 

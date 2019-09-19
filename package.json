@@ -14,6 +14,7 @@
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/polyfill": "^7.4.4",
     "antd": "^3.23.6",
+    "fastify": "^2.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
