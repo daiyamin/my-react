@@ -27,6 +27,10 @@ export default class Radio extends React.Component {
 
   }
 
+  shouldComponentUpdate() {
+    
+  }
+
   handleClick(...rest) {
     console.log(rest);
     // console.log(e);
