@@ -1,5 +1,6 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Dialog from 'components/dialog/Dialog.jsx';
 
 // import './index.css';
 // // import 'antd/dist/antd.css';
@@ -11,7 +12,7 @@
 
 
 
-// const rootElement = document.getElementById('root');
+const rootElement = document.getElementById('root');
 
 // // class Mouse extends React.Component {
 // //   constructor(props) {
@@ -55,29 +56,16 @@
 // //   }
 // // }
 
-// class App extends React.Component {
-//   state = {
-//     value: 1
-//   };
+class App extends React.Component {
 
-//   onChange = e => {
-//     console.log('radio checked', e.target.value);
-//     this.setState({
-//       value: e.target.value
-//     });
-//   };
-
-//   render() {
-//     return (
-//       // <Radio.Group onChange={this.onChange} value={this.state.value}>
-//         <Radio value={1}></Radio>
-//         // <Radio value={2}>B</Radio>
-//         // <Radio value={3}>C</Radio>
-//         // <Radio value={4}>D</Radio>
-//       // </Radio.Group>
-//     );
-//   }
-// }
+  render() {
+    return (
+      <Dialog>
+          <div>test</div>
+      </Dialog>
+    );
+  }
+}
 
 // ReactDOM.render(<App />, rootElement);
 
@@ -112,8 +100,10 @@
 // // uniq([1,2,4,5,9,21,23,12,2,5,7,9]);
 
 
-import a from './a'
-import {b1, b2} from './b'
+// import a from './a'
+// import {b1, b2} from './b'
 
-console.log(`a: ${a.name}`)
-console.log(`b1: ${b1.name}; b2: ${b2.name}`)
+// console.log(`a: ${a.name}`)
+// console.log(`b1: ${b1.name}; b2: ${b2.name}`)
+
+ReactDOM.render(<App />, rootElement);
