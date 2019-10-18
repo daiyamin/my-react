@@ -3,28 +3,29 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 console.log(path.resolve(__dirname, 'node_modules'));
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+// const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-    mode: 'production',
-    optimization: {
-      runtimeChunk: {
-        name: 'manifest'
-      },
-      minimizer: [
-        new UglifyJsPlugin({
-          uglifyOptions: {
-            compress: {
-              warnings: false,
-              drop_debugger: true,
-              drop_console: true
-            }         
-          },
-          sourceMap: true,
-          exclude: /(manifest\.js$|index.chunk.js)/
-        })
-      ]
-    },
+    mode: 'development',
+    devtool: 'source-map',
+    // optimization: {
+    //   runtimeChunk: {
+    //     name: 'manifest'
+    //   },
+    //   minimizer: [
+    //     new UglifyJsPlugin({
+    //       uglifyOptions: {
+    //         compress: {
+    //           warnings: false,
+    //           drop_debugger: true,
+    //           drop_console: true
+    //         }      
+    //       },
+    //       sourceMap: true,
+    //       exclude: /(manifest\.js$|index.chunk.js)/
+    //     })
+    //   ]
+    // },
     entry: {
       index: './views/index/index.js'
     },
@@ -67,10 +68,10 @@ module.exports = {
     }),
     // new webpack.NamedModulesPlugin(),
     // new webpack.HotModuleReplacementPlugin(),
-    // new webpack.HashedModuleIdsPlugin()
+    new webpack.HashedModuleIdsPlugin()
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
-    hot: false
+    hot: true
   }
 }
