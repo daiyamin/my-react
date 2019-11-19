@@ -10,6 +10,7 @@ const rootElement = document.getElementById('root');
 class App extends React.Component {
   change() {
     console.log('tab clicked');
+    console.log('tab clicked1');
   }
 
   render() {
