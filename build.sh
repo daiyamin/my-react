@@ -1,2 +1,2 @@
-webpack --config webpack.config.js
+webpack --config webpack.prod.js
 webpack-dev-server --open

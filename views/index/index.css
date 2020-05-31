@@ -3,3 +3,13 @@
   padding: 0;
   list-style: none;
 }
+
+.btn {
+  color: #f0f;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  text-align: center;
+  line-height: 50px;
+}
