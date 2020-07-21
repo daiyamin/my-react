@@ -40,3 +40,4 @@ console.log('_extend', _.extend(o, o1, o2, new f()));
 // console.log('_merge', _.merge(o, o1, o2, new f()));
 console.log('merge master 1');
 console.log('merge master 2');
+console.log('merge master 3');
